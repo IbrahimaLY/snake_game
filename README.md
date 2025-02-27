@@ -25,7 +25,7 @@ Pour exécuter ce projet, vous devez avoir Python installé sur votre machine. S
 
 1. **Clonez le dépôt** :
    ```bash
-   git clone https://github.com/votre-utilisateur/snake-game-python.git
+   git clone git@github.com:IbrahimaLY/snake_game.git
    cd snake-game
  2.  **Installez les dépendances** :
 Ce projet utilise uniquement la bibliothèque turtle, qui est incluse par défaut avec Python. Aucune installation supplémentaire n'est nécessaire.
