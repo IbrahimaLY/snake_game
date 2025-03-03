@@ -1,3 +1,8 @@
+
+# Auteur : Ibrahima Oumar LY
+# Date de création : 2025-03-03
+# Description : Ce fichier contient les fonctions pour le jeu Snake.
+
 from turtle import Turtle
 import random
 
