@@ -1,0 +1,17 @@
+# Ignorer les fichiers de configuration locaux
+.env
+*.env
+
+# Ignorer les dossiers de dépendances
+venv/
+__pycache__/
+*.pyc
+
+# Ignorer les fichiers de sortie ou de build
+build/
+dist/
+*.egg-info/
+
+# Ignorer les fichiers de l'IDE
+.idea/
+.vscode/
