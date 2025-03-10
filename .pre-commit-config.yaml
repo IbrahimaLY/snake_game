@@ -13,6 +13,6 @@ repos:
         entry: bash -c 'for file in $(git diff --cached --name-only --diff-filter=ACM |
         grep "\.py$"); do if ! grep -q "Auteur :
           Ibrahima Oumar LY" "$file"; then sed -i "1i# Auteur :
-                                                 Ibrahima Oumar LY\n# Date de création : $(date +'%Y-%m-%d')\n# Description
-                                                   : Ce fichier contient les fonctions pour le jeu Snake.\n" "$file"; git add "$file"; fi; done'
+           Ibrahima Oumar LY\n# Date de création : $(date +'%Y-%m-%d')\n# Description
+            : Ce fichier contient les fonctions pour le jeu Snake.\n" "$file"; git add "$file"; fi; done'
         language: system
