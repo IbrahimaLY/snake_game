@@ -15,3 +15,5 @@ dist/
 # Ignorer les fichiers de l'IDE
 .idea/
 .vscode/
+
+.pre-commit-config.yaml
