@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: local
+    hooks:
+      - id: add-signature
+        name: Add signature
+        entry: bash -c 'for file in $(git diff --cached --name-only --diff-filter=ACM |
+        grep "\.py$"); do if ! grep -q "Auteur :
+          Ibrahima Oumar LY" "$file"; then sed -i "1i# Auteur :
+                                                 Ibrahima Oumar LY\n# Date de création : $(date +'%Y-%m-%d')\n# Description
+                                                   : Ce fichier contient les fonctions pour le jeu Snake.\n" "$file"; git add "$file"; fi; done'
+        language: system
