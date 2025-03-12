@@ -16,4 +16,4 @@ dist/
 .idea/
 .vscode/
 
-.pre-commit-config.yaml
+
